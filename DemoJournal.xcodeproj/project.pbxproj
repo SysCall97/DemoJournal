@@ -99,13 +99,11 @@
 		047D55252BA1DD7900DCBB06 /* DemoJournal */ = {
 			isa = PBXGroup;
 			children = (
-				047D55262BA1DD7900DCBB06 /* AppDelegate.swift */,
-				047D55282BA1DD7900DCBB06 /* SceneDelegate.swift */,
+				047D55562BA1DE3500DCBB06 /* Support */,
 				047D552A2BA1DD7900DCBB06 /* ViewController.swift */,
-				047D552C2BA1DD7900DCBB06 /* Main.storyboard */,
-				047D552F2BA1DD7A00DCBB06 /* Assets.xcassets */,
-				047D55312BA1DD7A00DCBB06 /* LaunchScreen.storyboard */,
 				047D55342BA1DD7A00DCBB06 /* Info.plist */,
+				047D552C2BA1DD7900DCBB06 /* Main.storyboard */,
+				047D55312BA1DD7A00DCBB06 /* LaunchScreen.storyboard */,
 			);
 			path = DemoJournal;
 			sourceTree = "<group>";
@@ -125,6 +123,16 @@
 				047D55492BA1DD7A00DCBB06 /* DemoJournalUITestsLaunchTests.swift */,
 			);
 			path = DemoJournalUITests;
+			sourceTree = "<group>";
+		};
+		047D55562BA1DE3500DCBB06 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				047D552F2BA1DD7A00DCBB06 /* Assets.xcassets */,
+				047D55262BA1DD7900DCBB06 /* AppDelegate.swift */,
+				047D55282BA1DD7900DCBB06 /* SceneDelegate.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
