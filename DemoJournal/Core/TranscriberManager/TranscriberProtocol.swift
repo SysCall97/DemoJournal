@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import AVFAudio
+
+protocol TranscriberProtocol {
+    func transcribe(from asset: AVAudioFile) -> String
+}

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol SentimentAnalyzerProtocol {
+    func analyze(from text: String) -> Double
+}

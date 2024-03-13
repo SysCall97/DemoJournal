@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import AVFoundation
+
+protocol AudioManagerProtocol {
+    func record() -> AVAudioFile
+    func save(audio: AVAudioFile) -> URL
+}

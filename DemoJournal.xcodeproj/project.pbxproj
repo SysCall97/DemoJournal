@@ -16,6 +16,9 @@
 		047D553E2BA1DD7A00DCBB06 /* DemoJournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D553D2BA1DD7A00DCBB06 /* DemoJournalTests.swift */; };
 		047D55482BA1DD7A00DCBB06 /* DemoJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D55472BA1DD7A00DCBB06 /* DemoJournalUITests.swift */; };
 		047D554A2BA1DD7A00DCBB06 /* DemoJournalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D55492BA1DD7A00DCBB06 /* DemoJournalUITestsLaunchTests.swift */; };
+		047D555A2BA1DF8600DCBB06 /* AudioManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D55592BA1DF8600DCBB06 /* AudioManagerProtocol.swift */; };
+		047D555D2BA1E02900DCBB06 /* TranscriberProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D555C2BA1E02900DCBB06 /* TranscriberProtocol.swift */; };
+		047D55602BA1E09400DCBB06 /* SentimentAnalyzerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D555F2BA1E09400DCBB06 /* SentimentAnalyzerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		047D55432BA1DD7A00DCBB06 /* DemoJournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoJournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		047D55472BA1DD7A00DCBB06 /* DemoJournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoJournalUITests.swift; sourceTree = "<group>"; };
 		047D55492BA1DD7A00DCBB06 /* DemoJournalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoJournalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		047D55592BA1DF8600DCBB06 /* AudioManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManagerProtocol.swift; sourceTree = "<group>"; };
+		047D555C2BA1E02900DCBB06 /* TranscriberProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriberProtocol.swift; sourceTree = "<group>"; };
+		047D555F2BA1E09400DCBB06 /* SentimentAnalyzerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyzerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		047D55252BA1DD7900DCBB06 /* DemoJournal */ = {
 			isa = PBXGroup;
 			children = (
+				047D55572BA1DF6100DCBB06 /* Core */,
 				047D55562BA1DE3500DCBB06 /* Support */,
 				047D552A2BA1DD7900DCBB06 /* ViewController.swift */,
 				047D55342BA1DD7A00DCBB06 /* Info.plist */,
@@ -133,6 +140,40 @@
 				047D55282BA1DD7900DCBB06 /* SceneDelegate.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		047D55572BA1DF6100DCBB06 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				047D555E2BA1E08200DCBB06 /* SentimentAnalyzer */,
+				047D555B2BA1DFEB00DCBB06 /* TranscriberManager */,
+				047D55582BA1DF7300DCBB06 /* AudioManager */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		047D55582BA1DF7300DCBB06 /* AudioManager */ = {
+			isa = PBXGroup;
+			children = (
+				047D55592BA1DF8600DCBB06 /* AudioManagerProtocol.swift */,
+			);
+			path = AudioManager;
+			sourceTree = "<group>";
+		};
+		047D555B2BA1DFEB00DCBB06 /* TranscriberManager */ = {
+			isa = PBXGroup;
+			children = (
+				047D555C2BA1E02900DCBB06 /* TranscriberProtocol.swift */,
+			);
+			path = TranscriberManager;
+			sourceTree = "<group>";
+		};
+		047D555E2BA1E08200DCBB06 /* SentimentAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				047D555F2BA1E09400DCBB06 /* SentimentAnalyzerProtocol.swift */,
+			);
+			path = SentimentAnalyzer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047D555A2BA1DF8600DCBB06 /* AudioManagerProtocol.swift in Sources */,
 				047D552B2BA1DD7900DCBB06 /* ViewController.swift in Sources */,
 				047D55272BA1DD7900DCBB06 /* AppDelegate.swift in Sources */,
+				047D55602BA1E09400DCBB06 /* SentimentAnalyzerProtocol.swift in Sources */,
 				047D55292BA1DD7900DCBB06 /* SceneDelegate.swift in Sources */,
+				047D555D2BA1E02900DCBB06 /* TranscriberProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
